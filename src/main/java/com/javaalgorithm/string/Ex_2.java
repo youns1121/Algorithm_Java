@@ -44,9 +44,9 @@ public class Ex_2 {
         String answer = "";
 
         for (char x : str.toCharArray()) { //str의 배열만큼 x에 담아라
-            if (Character.isLowerCase(x)) {
-                answer += Character.toUpperCase(x);
-            } else answer+=Character.toLowerCase(x);
+            if (Character.isLowerCase(x)) { //문자가 소문자면 true
+                answer += Character.toUpperCase(x); // 대문자로 변환하여 answer에 추가
+            } else answer+=Character.toLowerCase(x); // false 면 소문자로 변환하여 asnwer에 추가
         }
 
         return answer;
